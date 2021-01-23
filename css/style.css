@@ -228,21 +228,27 @@ body{
 
 	display: block;
 	text-align: center;
-	padding: 8px 5px 0px 5px;
+	padding: 8px 0px 0px 0px;
 	border-radius: 4px;
-	width: 85px;
+	width: 100px;
 	height: 30px;
 	transition: all .1s linear;
 }
 
 .header__link:hover{
 	display: block;
-	width: 85px;
+	width: 100px;
 	height: 30px;
 	background-color: rgb(100, 58, 121, 0.8);
 	transition: all .1s linear;
 }
-
+.header__link.active{
+   display: block;
+	width: 100px;
+	height: 30px;
+	background-color: rgb(255, 127, 127, 0.8);
+	transition: all .1s linear;
+}
 
 /*Головна*/
 .container1{
@@ -732,7 +738,7 @@ input, textarea{
   width: 30%;
   height: 100%;
   overflow: auto;
-  background-color: #FF7F7FFF;
+  background-color: rgb(255, 127, 127, 0.8);
   padding: 0px 0px 20px 0px;
   transition: all 0.3s ease 0s;
 
@@ -753,11 +759,18 @@ input, textarea{
 	text-align: left;
 
 	padding: 0px;
-	width: auto;
+	width: 100px;
 }
 .header__link:hover{
 	display: block;
-	width: auto;
+	width: 100px;
+}
+.header__link.active{
+   display: block;
+	width: 100px;
+	height: 30px;
+	background-color: rgb(100, 58, 121, 0.8);
+	transition: all .1s linear;
 }
 
 /*Головна*/

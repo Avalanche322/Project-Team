@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cuda</title>
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="no-scroll">
+	<!--Сайт-->
+	<div class="wrapper">
+		<!--Екран загрузки-->
+		<div id="p_prldr">
+				<div class="container">
+					<div class="contpre"><span class="svg_anm"></div>
+				</div>
+		</div>
+
+		<!--Навігація-->
+		<header class="header">
+			<div class="container">
+				<div class="header__body">
+					<div class="header__logo">
+						<img src="img/logo/logo.png" alt="logo">
+					</div>
+						<div class="header__burger">
+							<span></span>
+						</div>
+						<nav class="header__menu">
+							<ul class="header__list">
+								<li>
+									<a href="#" class="header__link">HOME</a>
+								</li>
+								<li>
+									<a href="#a" class="header__link">ABOUT</a>
+								</li>
+								<li>
+									<a href="#" class="header__link">WORK</a>
+								</li>
+								<li>
+									<a href="#" class="header__link">BLOG</a>
+								</li>
+								<li>
+									<a href="#" class="header__link">CONTACT</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+		</header>
+
+	<main class="main">		
+		<!--Головна-->
+		<div class="container1 sonp-section sonp-full"> 
+				<div class="text">
+					<p class="about_text">
+						Hi there! We are the new kids on the block<br>
+					and we build awesome websites and mobile apps. 
+					</p>
+				</div>
+				<button onclick="$('.sonp-section').nextPage()" class="button button-main">WORK WITH US!</button>
+		</div>
+
+		<!--Сервіси-->
+		<div class="container2 sonp-section sonp-full">
+			<div class="container">
+			  <div class="block_2">
+				  <div class="block_title">
+					<div class="portfolio__top-title title">Services we provide</div>
+					<h2>We are working with both individuals and businesses from all over the globe<br>
+					to create awesome websites and applications.</h2>
+				  </div>
+				  <div class="services two-blocks-768px">
+					<div class="branding">
+					  <div class="services_content">
+						<div class="photo">
+						  <img src="img/services/Flag_icon.png" alt="Error">
+						</div>
+						<div class="info">
+						  <div class="services_name">
+							<p>Branding</p>
+						  </div>
+						  <div class="services_info">
+							<p>Branding is what your business needs to break through the clutter and grab your ideal customer’s attention.</p>
+						  </div>
+						</div>
+					  </div>
+					</div>
+					<div class="design">
+					  <div class="services_content">
+						<div class="photo">
+						  <img src="img/services/Pencil_icon.png" alt="Error"></a>
+						</div>
+						<div class="info">
+						  <div class="services_name">
+							<p>Design</p>
+						  </div>
+						  <div class="services_info">
+							<p>Web design is, first of all, the design of your site, so it is very important.</p>
+						  </div>
+						</div>
+					  </div>
+					</div>
+					<div class="development">
+						<div class="services_content">
+						  <div class="photo">
+							<img src="img/services/Gears_icon.png" alt="Error"></a>
+						  </div>
+						  <div class="info">
+							<div class="services_name">
+							  <p>development</p>
+							</div>
+							<div class="services_info">
+							  <p>Web development is the process of creating websites or web applications. </p>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					  <div class="rocket">
+						<div class="services_content">
+						  <div class="photo">
+							<img src="img/services/Rocket_icon.png" alt="Error"></a>
+						  </div>
+						  <div class="info">
+							<div class="services_name">
+							  <p>Rocket Science</p>
+							</div>
+							<div class="services_info">
+							  <p>We work very fast and efficiently, like Ilona Maska's rocket.</p>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+		</div>	
+
+		<!-----Наша команда----->
+		<div class="block_3 sonp-section sonp-full">
+			<div class="container">
+				<div class="block_title">
+					<div class="portfolio__top-title title">Meet our beautiful team</div>
+					<h2>We are a small team of designers and developers, who help brands with big ideas.</h2>
+				</div>
+				<div class="persons two-blocks-820px">
+					<div class="person_1">
+						<div class="person_content">
+							<div class="photo2">
+								<a href="img/CV/Vadym/index.html" target="_blank"><img src="img/portfolio/vodum.png" alt="Error"></a>
+							</div>
+							<div class="info">
+								<div class="persons_name">
+									<p>Vadym Skliarov</p>
+								</div>
+								<div class="position">
+									<p>Team Leader</p>
+								</div>
+								<div class="person_info">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eum neque laboriosam quae. Ipsam, esse reprehenderit? Odio, distinctio officiis</p>
+								</div>
+							</div>
+							<div class="link_list">
+								<div class="link">
+									<a href="https://www.facebook.com/profile.php?id=100012541662599" target="_blank"><img src="img/icon/Facebook_icon.png" alt="facebook"></a>
+									<a href="https://www.instagram.com/_vodum_/?hl=ru" target="_blank"><img src="img/icon/Instagram_icon.png" alt="instagram"></a>
+									<a href="Mailto:avalfnche@gmail.com" target="_blank"><img src="img/icon/Mail_icon.png" alt="mail"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="person_2">
+						<div class="person_content">
+							<div class="photo2">
+								<a href="img/CV/Lilya/index.html" target="_blank"><img src="img/portfolio/lylyka.png" alt="Error"></a>
+							</div>
+							<div class="info">
+								<div class="persons_name">
+									<p>Lilia Kolesnyk</p>
+								</div>
+								<div class="position">
+									<p>SEO / Marketing Guru</p>
+								</div>
+								<div class="person_info">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eum neque laboriosam quae. Ipsam, esse reprehenderit? Odio, distinctio officiis</p>
+								</div>
+							</div>
+							<div class="link_list">
+								<div class="link">
+									<a href="https://www.facebook.com/profile.php?id=100009042014685" target="_blank"><img src="img/icon/Facebook_icon.png" alt="facebook"></a>
+									<a href="https://www.instagram.com/kolesnyk_lilya/?hl=ru" target="_blank"><img src="img/icon/Instagram_icon.png" alt="instagram"></a>
+									<a href="Mailto:kolesnykl59@gmail.com" target="_blank"><img src="img/icon/Mail_icon.png" alt="mail"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="person_3">
+						<div class="person_content">
+							<div class="photo2">
+								<a href="img/CV/Andrii/index.html" target="_blank"><img src="img/portfolio/pylyp.png" alt="Error"></a>
+							</div>
+							<div class="info">
+								<div class="persons_name">
+									<p>Andrii Husak</p>
+								</div>
+								<div class="position">
+									<p>Lead Designer</p>
+								</div>
+								<div class="person_info">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eum neque laboriosam quae. Ipsam, esse reprehenderit? Odio, distinctio officiis</p>
+								</div>
+							</div>
+							<div class="link_list">
+								<div class="link">
+									<a href="https://www.facebook.com/profile.php?id=100013312656140" target="_blank"><img src="img/icon/Facebook_icon.png" alt="facebook"></a>
+									<a href="https://www.instagram.com/andriy.gus/?hl=ru" target="_blank"><img src="img/icon/Instagram_icon.png" alt="instagram"></a>
+									<a href="Mailto:andrigus3002@gmail.com" target="_blank"><img src="img/icon/Mail_icon.png" alt="mail"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="person_4">
+						<div class="person_content">
+							<div class="photo2">
+								<a href="img/CV/Pavlo/index.html" target="_blank"><img src="img/portfolio/pablo.png" alt="Error"></a>
+							</div>
+							<div class="info">
+								<div class="persons_name">
+									<p>Pavlo Milyan</p>
+								</div>
+								<div class="position">
+									<p>Developer</p>
+								</div>
+								<div class="person_info">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eum neque laboriosam quae. Ipsam, esse reprehenderit? Odio, distinctio officiis</p>
+								</div>
+							</div>
+							<div class="link_list">
+								<div class="link">
+									<a href="https://www.facebook.com/profile.php?id=100017011517217" target="_blank"><img src="img/icon/Facebook_icon.png" alt="facebook"></a>
+									<a href="https://www.instagram.com/just.pavlo/?hl=ru" target="_blank"><img src="img/icon/Instagram_icon.png" alt="instagram"></a>
+									<a href="Mailto:milyan26@icloud.com" target="_blank"><img src="img/icon/Mail_icon.png" alt="mail"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Наші скіли-->
+		<div class="block_4 sonp-section sonp-full">
+			<div class="container">
+				<div class="block_title">
+					<div class="portfolio__top-title title">WE GOT SKILLS!</div>
+					<h2>Our skill graphics are introduced here:</h2>
+				</div>
+				<div class="graphics two-blocks-820px">
+					<div class="graphic_1">
+						<div class="box">
+							<input type="text" value="90" class="dial" data-fgColor="#30bae7" data-bgColor="#9ffcfc" data-thickness="0.2" data-readOnly="true">
+						</div>
+						<h2>web design</h2>
+					</div>
+					<div class="graphic_2">
+						<div class="box">
+							<input type="text" value="75" class="dial1" data-fgColor="#d74680" data-bgColor="#9ffcfc" data-thickness="0.2" data-readOnly="true">
+						</div>
+						<h2>html / css</h2>
+					</div>
+					<div class="graphic_3">
+						<div class="box">
+							<input type="text" value="70" class="dial2" data-fgColor="#15c7a8" data-bgColor="#9ffcfc" data-thickness="0.2" data-readOnly="true" >
+						</div>
+						<h2>graphic design</h2>
+					</div>
+					<div class="graphic_4">
+						<div class="box">
+							<input type="text" value="85" class="dial3" data-fgColor="#eb7d4b" data-bgColor="#9ffcfc" data-thickness="0.2" data-readOnly="true" >
+						</div>
+						<h2>ui / ux</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Портфоліо-->
+		<div class="portfolio sonp-section sonp-full">
+				<div class="container">
+					<div class="portfolio__top">
+						<div class="portfolio__top-title title">OUR PORTFOLIO</div>
+						<div class="portfolio__top-text">Nor is there any person belonging, and their distressing anguish alone, that it dolor sit amet consectetur, he wishes to obtain, but because they do not never see the.</div>
+					</div>
+					<div class="laptops">
+						<div class="laptops__item">
+							<div class="laptop">
+								<a href="#"><img src="img/icon/1.png" alt="laptop1"></a>
+							</div>
+							<div class="laptop__text">Isometric Perspective Mock-Up</div>
+						</div>
+						<div class="laptops__item">
+							<div class="laptop">
+								<a href="#"><img src="img/icon/2.png" alt="laptop2"></a>
+							</div>
+							<div class="laptop__text">Time Zone App UI</div>
+						</div>
+						<div class="laptops__item">
+							<div class="laptop">
+								<a href="#"><img src="img/icon/3.png" alt="laptop3"></a>
+							</div>
+							<div class="laptop__text">Viro Media Players UI copy 2</div>
+						</div>
+					</div>
+					<a href="https://camouf.ru/designes/ready-psd-layouts-for-saito/" target="_blank">
+						<button class="button" >LOAD MORE PROJECTS</button>
+					</a>
+				</div>
+		</div>
+
+		<!-- Блог -->
+		<div class="about_us sonp-section sonp-full">
+			<div class="container">
+				<div class="portfolio__top-title title">WHAT PEOPLE SAY ABOUT US</div>
+					<p class="about_us_clients">Our clients love us!</p>
+
+				<div class="colums">
+						<div class="colums__row">
+							<div class="colums__colum">
+								<div class="item__row">
+									<div class="item__imgage">
+										<img src="img/portfolio/1.png" alt="Тимчасово недоступно">
+									</div>
+									<div class="item_body">
+										<div class="item__text">"Nulam dopibus blandit orci, vierra graveda dui lobortis eget. Moecans fringrila urna eu nisl scerisque"</div>
+										<div class="item__title">CHANEL IMAN</div>
+										<div class="item__title_social">CEO of Pinterest</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="colums__colum">
+								<div class="colums__item item">
+									<div class="item__row">
+										<div class="item__imgage">
+											<img src="img/portfolio/2.png" alt="Тимчасово недоступно">
+										</div>
+										<div class="item_body">
+											<div class="item__text">"Nulam dopibus blandit orci, vierra graveda dui lobortis eget. Moecans fringrila urna eu nisl scerisque"</div>
+											<div class="item__title">CHANEL IMAN</div>
+											<div class="item__title_social">CEO of Pinterest</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="colums__colum">
+								<div class="colums__item item">
+									<div class="item__row">
+										<div class="item__imgage">
+											<img src="img/portfolio/3.png" alt="Тимчасово недоступно">
+										</div>
+										<div class="item_body">
+											<div class="item__text">"Nulam dopibus blandit orci, vierra graveda dui lobortis eget. Moecans fringrila urna eu nisl scerisque"</div>
+											<div class="item__title">CHANEL IMAN</div>
+											<div class="item__title_social">CEO of Pinterest</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="colums__colum">
+								<div class="colums__item item">
+									<div class="item__row">
+										<div class="item__imgage">
+											<img src="img/portfolio/4.png" alt="Тимчасово недоступно">
+										</div>
+										<div class="item_body">
+											<div class="item__text">"Nulam dopibus blandit orci, vierra graveda dui lobortis eget. Moecans fringrila urna eu nisl scerisque"</div>
+											<div class="item__title">CHANEL IMAN</div>
+											<div class="item__title_social">CEO of Pinterest</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Зв'язатися із нами -->
+		<div class="get_in_touch sonp-section sonp-full">
+			<div class="conteiner">
+				<div class="portfolio__top-title title">GET IN TOUCH</div>
+				<p class="get_in_touch_adress">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel:(202)456-1111</p>
+
+			<div class="login">
+				<form action="mailto:milyan1623@gmail.com" method="">
+						<input id="first-name" type="text" placeholder="Enter Your name" name="first-name" id="first-name" required>
+						<input id="" type="text" placeholder="Enter Email" name="email" id="email" required> <br>
+						<textarea type="text" placeholder="Enter Your message" required></textarea>
+					<a href="#">
+						<button class="button button-send">SEND MESSAGE</button>
+					</a>
+				</form>
+				</div>
+			</div>
+		</div>
+	
+	<footer class="footer sonp-section sonp-small">
+		<div class="container">
+			<div class="footer__row">
+				<div class="footer__text"><a href="#" target="_blank">Facebook</a></div>
+				<div class="footer__text"><a href="#" target="_blank">Twitter</a></div>
+				<div class="footer__text"><a href="#" target="_blank">Google +</a></div>
+				<div class="footer__text"><a href="#" target="_blank">Linkedln</a></div>
+				<div class="footer__text"><a href="#" target="_blank">Behance</a></div>
+				<div class="footer__text"><a href="#" target="_blank">Dribbble</a></div>
+				<div class="footer__text"><a href="#" target="_blank">GitHub</a></div>
+			</div>
+		</div>
+	</footer>
+	</div>
+
+	<!-- Підключаємо jQuery -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<!-- Підключаємо файл для діаграм -->
+	<script src="js/jquery.knob.min.js"></script>
+	<!-- Підключаємо файл js -->
+	<script src="js/script.js"></script>
+	<!-- Підключаємо плагіна для прокрутки -->
+	<script src="js/sonpScroll.js"></script>
+</body>
+</html>

@@ -900,10 +900,6 @@ textarea{
 
 }
 @media (max-width: 576px){
-/*Головна*/
-.text{
-	padding: 200px 0px 0px 0px;
-}
 /*Навігація*/
 .header__menu {
   right: -40%;

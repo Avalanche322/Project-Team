@@ -11,7 +11,7 @@
 
  ******************************************************************/
 function windowSize(){
-    if ($(window).width() >= '1100'){
+    if ($(window).width() >= '1200'){
         var pagesMax = 0;
 
         $(document).ready(function(){

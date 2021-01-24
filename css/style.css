@@ -254,11 +254,9 @@ body{
 .container1{
 	background-color:  #87509c;
 	min-height: 100vh;
+	padding: 300px 0px 50px 0px;
 }
 
-.text{
-	padding: 300px 0px 0px 0px;
-}
 
 .about_text{
 	text-align: center;

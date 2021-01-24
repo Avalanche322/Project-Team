@@ -96,7 +96,6 @@ function windowSize(){
 
                 var top = $(this).next(".sonp-section-"+pageIndex).offset().top;
                 $("html, body").stop().animate({scrollTop: top},1000);
-
             }
 
         };
@@ -110,7 +109,6 @@ function windowSize(){
 
                 var top = $(this).prev(".sonp-section-"+pageIndex).offset().top;
                 $("html, body").stop().animate({scrollTop: top},1000);
-
             }
 
         };

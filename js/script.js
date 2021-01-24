@@ -72,14 +72,7 @@ $("nav").on("click","a", function (event) {
 
     // находим высоту, на которой расположен блок
         top = $(id).offset().top;
-
-    if ($(window).width() >= '1100'){
-      // анимируем переход к блоку, время: 800 мс
+     
+    // анимируем переход к блоку, время: 800 мс
     $('body,html').animate({scrollTop: top}, 800);
-    } else{
-      // анимируем переход к блоку, время: 0 мс
-      $('body,html').animate({scrollTop: top}, 0);
-    }
 });
-
-

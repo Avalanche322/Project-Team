@@ -77,7 +77,7 @@ body{
 
 	transform: translate(0px, 120%);
 	opacity: 0;
-	transition: all 0.8s ease 0s;
+	transition: all 0.8s ease 0.2s;
 }
 .title._active{
 	transform: translate(0px, 0px);
@@ -101,6 +101,15 @@ body{
 	padding: 0px 0px 30px 0px;
 	max-width: 500px;
 	line-height: 24px;
+
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0.2s;
+}
+.portfolio__top-text._active{
+	transform: translate(0px, 0px);
+	transition: all 0.8s ease 0.4s;
+	opacity: 1;
 }
 .laptops{
 	display: flex;
@@ -146,6 +155,15 @@ body{
 	margin: 0 auto;
 	position: relative;
 	top: 0;
+
+	transform: translate(-120%, 0px);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+}
+.button._active{
+	transform: translate(0px, 0px);
+	opacity: 1;
+	transition: all 0.8s ease 0.4s;
 }
 .button:active {
   	box-shadow: 0 2px 0 #14A58CFF;
@@ -298,15 +316,6 @@ body{
 .button-main{
 	background-color: #EB7D4BFF;
 	box-shadow: 0 5px 0 #C86A40FF;
-
-	transform: translate(-120%, 0px);
-	opacity: 0;
-	transition: all 0.8s ease 0s;
-}
-.button-main._active{
-	transform: translate(0px, 0px);
-	opacity: 1;
-	transition: all 0.8s ease 0.4s;
 }
 .button-main:active {
   	box-shadow: 0 2px 0 #C86A40FF;
@@ -349,37 +358,49 @@ body{
 	justify-content: space-between;
 	display: flex;
 }
-  
-.branding,
-.design,
-.development,
+.branding{
+	max-width: 260px;
+
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0.2s;
+}
+.design{
+	max-width: 260px;
+
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0.4s;
+}
+.development{
+	max-width: 260px;
+
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0.6s;
+}
 .rocket{
 	max-width: 260px;
 
 	transform: translate(0px, 120%);
 	opacity: 0;
-	transition: all 0.8s ease 0s;
-}
-
-.rocket._active{
-	transform: translate(0px, 0px);
-	opacity: 1;
-	transition: all 0.8s ease 1.2s;
+	transition: all 0.8s ease 0.8s;
 }
 .branding._active{
 	transform: translate(0px, 0px);
 	opacity: 1;
-	transition: all 0.8s ease 0.6s;
 }
 .design._active{
 	transform: translate(0px, 0px);
 	opacity: 1;
-	transition: all 0.8s ease 0.8s;
 }
 .development._active{
 	transform: translate(0px, 0px);
 	opacity: 1;
-	transition: all 0.8s ease 1s;
+}
+.rocket._active{
+	transform: translate(0px, 0px);
+	opacity: 1;
 }
 .services_content{
 	padding: 0 auto;
@@ -536,13 +557,50 @@ body{
 	text-align: center;
 }
 
-.graphic_1,
-.graphic_2,
-.graphic_3,
+.graphic_1{
+	max-width: 260px;
+
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0.2s;
+}
+.graphic_2{
+	max-width: 260px;
+
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0.4s;
+}
+.graphic_3{
+	max-width: 260px;
+
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0.6s;
+}
 .graphic_4{
 	max-width: 260px;
-}
 
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0.8s;
+}
+.graphic_1._active{
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
+.graphic_2._active{
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
+.graphic_3._active{
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
+.graphic_4._active{
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
 .box{
    width: 200px;
    float: left;
@@ -561,6 +619,15 @@ body{
 	font-size: 18px;
 	text-align: center;
 	line-height: 24px;
+
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0.2s;
+}
+.about_us_clients._active{
+	transform: translate(0px, 0px);
+	transition: all 0.8s ease 0.4s;
+	opacity: 1;
 }
 .colums__title {
 	text-align: center;
@@ -574,6 +641,22 @@ body{
 .colums__colum {
 	padding: 30px 8px;
 	flex: 0 1 50%;
+}
+.colums__colum:nth-child(odd){
+	transform: translate(-120%, 0px);
+	opacity: 0;
+	transition: all 0.8s ease 0.2s;
+}
+.colums__colum:nth-child(even){
+	transform: translate(120%, 0px);
+	opacity: 0;
+	transition: all 0.8s ease 0.2s;
+}
+.colums__colum._active:nth-child(odd),
+.colums__colum._active:nth-child(even){
+	transform: translate(0px, 0px);
+	transition: all 0.8s ease 0.8s;
+	opacity: 1;
 }
 .item__row {
 	display: flex;
@@ -614,7 +697,17 @@ body{
 	font-size: 18px;
 	text-align: center;
 	line-height: 24px;
+
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0.2s;
 }
+.get_in_touch_adress._active{
+	transform: translate(0px, 0px);
+	transition: all 0.8s ease 0.4s;
+	opacity: 1;
+}
+
 input[type=text] {
 	color: white;
 	background-color: #273A71FF;
@@ -654,9 +747,32 @@ input, textarea{
 	color: white;
 	font-size: 18px;
 }
-.Your_Name__ {
+.first-name{
+	transform: translate(-120%, 0px);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
 }
-
+.email{
+	transform: translate(120%, 0px);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+}
+.textarea{
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+}
+.first-name._active,
+.email._active{
+	transform: translate(0px, 0px);
+	transition: all 0.8s ease 0.6s;
+	opacity: 1;
+}
+.textarea._active{
+	transform: translate(0px, 0px);
+	transition: all 0.8s ease 0.8s;
+	opacity: 1;
+}
 /*Підвал*/
 .footer {
 	background-color: #344B8EFF;

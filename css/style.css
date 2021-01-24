@@ -731,6 +731,9 @@ html{
 	padding: 0px;
 	width: 140px;
 }
+.header__link:hover{
+	width: 140px;
+}
 .header__link.active{
    display: block;
 	width: 140px;

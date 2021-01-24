@@ -638,11 +638,6 @@ input, textarea{
 }
 
 }
-@media(max-width: 1100px){
-html{
-	scroll-behavior: smooth;
-}
-}
 @media(max-width: 920px){
 .header__menu{
 	padding: 0px 10px 0px 0px;
@@ -657,6 +652,9 @@ html{
 .header__body {
 	height: 90px;
 	padding: 0px 30px;
+}
+html{
+	scroll-behavior: smooth;
 }
 .header__burger {
 	display: block;
@@ -729,6 +727,9 @@ html{
 	text-align: left;
 
 	padding: 0px;
+	width: 140px;
+}
+.header__link:hover{
 	width: 140px;
 }
 .header__link.active{

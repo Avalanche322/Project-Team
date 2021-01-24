@@ -74,5 +74,5 @@ $("nav").on("click","a", function (event) {
         top = $(id).offset().top;
      
     // анимируем переход к блоку, время: 800 мс
-    $('body,html').animate({scrollTop: top}, 800);
+    $('body,html').animate({scrollTop: top}, 0);
 });

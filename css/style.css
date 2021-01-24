@@ -38,6 +38,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 /*Загальне*/
+html{
+	scroll-behavior: smooth;
+}
 body{
 	font-family: 'Titillium Web', sans-serif;
 	color: #2e2e2e;
@@ -726,10 +729,6 @@ input, textarea{
 	padding: 0px;
 	width: 140px;
 }
-.header__link:hover{
-	display: block;
-	width: 140px;
-}
 .header__link.active{
    display: block;
 	width: 140px;
@@ -744,7 +743,7 @@ input, textarea{
 .two-blocks-820px{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: flex-start;
 	padding: 0;
 	margin: 30px 0px 0px 0px;
 }
@@ -796,6 +795,17 @@ form{
 	align-items: center;
 }
 
+}
+
+@media(max-width: 720px){
+
+/*Наша команда*/
+.two-blocks-820px{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0;
+	margin: 30px 0px 0px 0px;
 }
 @media(max-width: 713px){
 /*Портфоліо*/

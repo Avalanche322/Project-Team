@@ -59,14 +59,6 @@ body{
 	min-height: 100vh;
 	padding: 110px 0px;
 }
-.portfolio2 {
-	background-color: #BA7244FF;
-	padding: 110px 0px;
-}
-.portfolio3 {
-	background-color: #D727B1FF;
-	padding: 100px 0px;
-}
 .portfolio__top-title {
 	margin: 0px 0px 40px 0px;
 }
@@ -114,7 +106,7 @@ body{
 .laptops{
 	display: flex;
 	justify-content: center;
-	flex-wrap: wrap;
+	
  	margin: 30px 0px 40px -10px;
 }
 .laptops__item {
@@ -307,6 +299,9 @@ body{
 	animation-fill-mode: forwards; 
 	animation-delay: 1s;
 }
+.container1 a{
+	width: 293px;
+}
 @keyframes show{
 0%{
 	opacity:0;
@@ -492,8 +487,7 @@ body{
 }
 
 .persons{
-	margin-top: 60px;
-	max-width: 1140px;
+	margin-top: 40px;
 	justify-content: space-between;
 	display: flex;
 	flex-direction: row;
@@ -549,7 +543,7 @@ body{
 
 .photo2{
 	width: 200px;
-	margin: 0 auto 45px;
+	margin: 0 auto 25px;
 }
 
 .photo2 img{
@@ -862,19 +856,63 @@ input, textarea{
 
 
 /*Адаптація*/
-@media(max-width: 1220px){
+@media(max-width: 1300px){
+/*Сервіси*/
+.services{
+	margin-top: 50px;
+	max-width: 1140px;
+	justify-content: space-between;
+	display: flex;
+}
+/*Наша команда*/
+.photo2{
+	width: 150px;
+}
+.persons{
+	margin-top: 30px;
+}
 /*Портфоліо*/
+.portfolio {
+	padding: 80px 0px;
+}
 .laptops{
-	justify-content: flex-start;
+ 	margin: 20px 0px 30px -10px;
 }
-.laptops__item {
-	padding: 20px 10px;
+.laptop {
+	width: 300px;
+	height: 100px;
 }
-
+/*Блог*/
+.about_us{
+	padding: 80px 0px 0px 0px;
+}
+.colums__row {
+	margin: 40px -8px 0px -8px;
+}
+/*Контакти*/
+.get_in_touch{
+	padding: 80px 0px 50px 0px;
+}
+.login{
+	padding: 30px 0px 0px 0px;
+}
+.button-send{
+	margin-top: 25px;
+}
 }
 @media(max-width: 1200px){
 .container{
 	max-width: 900px;
+}
+@media(max-width: 1000px){
+/*Портфоліо*/
+.laptops{
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.laptops__item {
+	padding: 20px 10px;
+}
 }
 
 }

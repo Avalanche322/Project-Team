@@ -128,7 +128,7 @@ body{
 .laptops__item:nth-child(2){
 	transform: translate(0px, 120%);
 	opacity: 0;
-	transition: all 0.8s ease 1s;
+	transition: all 0.8s ease 0.8s;
 }
 .laptops__item:nth-child(3){
 	transform: translate(120%, 0px);

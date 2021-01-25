@@ -120,6 +120,27 @@ body{
 .laptops__item {
 	padding: 0px 10px;
 }
+.laptops__item:nth-child(1){
+	transform: translate(-120%, 0px);
+	opacity: 0;
+	transition: all 0.8s ease 0.6s;
+}
+.laptops__item:nth-child(2){
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 1s;
+}
+.laptops__item:nth-child(3){
+	transform: translate(120%, 0px);
+	opacity: 0;
+	transition: all 0.8s ease 0.6s;
+}
+.laptops__item._active:nth-child(1),
+.laptops__item._active:nth-child(2),
+.laptops__item._active:nth-child(3){
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
 .laptop {
 	width: 341px;
 	height: 111px;
@@ -148,7 +169,6 @@ body{
   	cursor: pointer;
   	font: inherit;
   	font-size: 18px;
-  	transition: all .1s linear;
 
   	width: 293px;
 	height: 70px;
@@ -163,7 +183,6 @@ body{
 .button._active{
 	transform: translate(0px, 0px);
 	opacity: 1;
-	transition: all 0.8s ease 0.4s;
 }
 .button:active {
   	box-shadow: 0 2px 0 #14A58CFF;
@@ -361,30 +380,30 @@ body{
 .branding{
 	max-width: 260px;
 
-	transform: translate(0px, 120%);
+	transform: translate(0px, 20%);
 	opacity: 0;
-	transition: all 0.8s ease 0.2s;
+	transition: all 0.8s ease 0.6s;
 }
 .design{
 	max-width: 260px;
 
-	transform: translate(0px, 120%);
+	transform: translate(0px, 20%);
 	opacity: 0;
-	transition: all 0.8s ease 0.4s;
+	transition: all 0.8s ease 0.8s;
 }
 .development{
 	max-width: 260px;
 
-	transform: translate(0px, 120%);
+	transform: translate(0px, 20%);
 	opacity: 0;
-	transition: all 0.8s ease 0.6s;
+	transition: all 0.8s ease 1s;
 }
 .rocket{
 	max-width: 260px;
 
-	transform: translate(0px, 120%);
+	transform: translate(0px, 20%);
 	opacity: 0;
-	transition: all 0.8s ease 0.8s;
+	transition: all 0.8s ease 1.2s;
 }
 .branding._active{
 	transform: translate(0px, 0px);
@@ -480,13 +499,50 @@ body{
 	flex-direction: row;
 }
 
-.person_1,
-.person_2,
-.person_3,
+.person_1{
+	max-width: 260px;
+
+	transform: translate(0px, 20%);
+	opacity: 0;
+	transition: all 0.8s ease 0.6s;
+}
+.person_2{
+	max-width: 260px;
+
+	transform: translate(0px, 20%);
+	opacity: 0;
+	transition: all 0.8s ease 0.8s;
+}
+.person_3{
+	max-width: 260px;
+
+	transform: translate(0px, 20%);
+	opacity: 0;
+	transition: all 0.8s ease 1s;
+}
 .person_4{
 	max-width: 260px;
-}
 
+	transform: translate(0px, 20%);
+	opacity: 0;
+	transition: all 0.8s ease 1.2s;
+}
+.person_1._active{
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
+.person_2._active{
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
+.person_3._active{
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
+.person_4._active{
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
 .person_content{
 	padding: 0 auto;
 }
@@ -560,28 +616,28 @@ body{
 .graphic_1{
 	max-width: 260px;
 
-	transform: translate(0px, 120%);
+	transform: translate(0px, 50%);
 	opacity: 0;
 	transition: all 0.8s ease 0.2s;
 }
 .graphic_2{
 	max-width: 260px;
 
-	transform: translate(0px, 120%);
+	transform: translate(0px, 50%);
 	opacity: 0;
 	transition: all 0.8s ease 0.4s;
 }
 .graphic_3{
 	max-width: 260px;
 
-	transform: translate(0px, 120%);
+	transform: translate(0px, 50%);
 	opacity: 0;
 	transition: all 0.8s ease 0.6s;
 }
 .graphic_4{
 	max-width: 260px;
 
-	transform: translate(0px, 120%);
+	transform: translate(0px, 50%);
 	opacity: 0;
 	transition: all 0.8s ease 0.8s;
 }
@@ -800,6 +856,7 @@ input, textarea{
 	color:#91bdff;
 	font-weight: bold;
 	text-decoration: none;
+	transition-duration: 300ms;
 }
 
 

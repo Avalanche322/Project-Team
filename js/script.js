@@ -48,7 +48,8 @@ $(document).ready(function(){
     $('body').toggleClass('lock');
   });
 });
-
+function windowSize(){
+    if ($(window).width() >= '820'){
 jQuery(window).scroll(function(){
          var $sections = $('div');
   $sections.each(function(i,el){
@@ -63,7 +64,9 @@ jQuery(window).scroll(function(){
         }
     })
  });
-
+}
+}
+$(window).on('load resize',windowSize);
 $("nav").on("click","a", function (event) {
     // исключаем стандартную реакцию браузера
     event.preventDefault();

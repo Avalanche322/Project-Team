@@ -800,7 +800,7 @@ input, textarea{
 	display: flex;
 }
 /*Наша команда*/
-.photo2{
+.persons__photo{
 	width: 150px;
 }
 .persons{
@@ -842,7 +842,7 @@ input, textarea{
 @media(max-width: 1000px){
 /*Портфоліо*/
 .laptops{
-	justify-content: flex-start;
+	
 	flex-wrap: wrap;
 }
 .laptops__item {
@@ -959,21 +959,15 @@ html{
 .two-blocks-820px{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-start;
-	padding: 0;
+	justify-content: center;
+	padding: 5px;
 	margin: 30px 0px 0px 0px;
 }
-.person_1,
-.person_2,
-.person_3,
-.person_4{
+.person{
 	margin: 20px 0px 0px 0px;
 }
 /*Наші скіли*/
-.graphic_1,
-.graphic_2,
-.graphic_3,
-.graphic_4{
+.graphic{
 	margin: 20px;
 }
 /*Екран загрузки*/

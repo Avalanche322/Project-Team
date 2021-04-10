@@ -49,7 +49,7 @@ $(document).ready(function(){
   });
 });
 
-/*============================On Skroll Page and off for mobeli==============================================*/
+/*============================Navigarion animation==============================================*/
 function windowSize(){
     if ($(window).width() >= '820'){
 jQuery(window).scroll(function(){
@@ -70,19 +70,19 @@ jQuery(window).scroll(function(){
 }
 $(window).on('load resize',windowSize);
 $("nav").on("click","a", function (event) {
-    // исключаем стандартную реакцию браузера
+    // exclude the standard browser reaction
     event.preventDefault();
 
-    // получем идентификатор блока из атрибута href
+    // get block id from href attribute
     var id  = $(this).attr('href'),
 
-    // находим высоту, на которой расположен блок
+    // find the height at which the block is located
         top = $(id).offset().top;
      if ($(window).width() >= '820'){
-    // анимируем переход к блоку, время: 0 мс
+    // animate the transition to the block, time: 0 ms
     $('body,html').animate({scrollTop: top}, 800);
   } else{
-    // анимируем переход к блоку, время: 800 мс
+    // animate the transition to the block, time: 800 ms
      $('body,html').animate({scrollTop: top}, 0);
   }
 });

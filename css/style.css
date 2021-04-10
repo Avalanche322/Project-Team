@@ -350,7 +350,7 @@ body{
 	flex-direction: column;
 }
   
-.block_title h2{
+.block_title p{
 	text-align: center;
 	line-height: 24px;
 	font-size: 18px;
@@ -359,7 +359,7 @@ body{
 	opacity: 0;
 	transition: all 0.8s ease 0s;
 }
-.block_title h2._active{
+.block_title p._active{
 	transform: translate(0px, 0px);
 	opacity: 1;
 	transition: all 0.8s ease 0.4s;

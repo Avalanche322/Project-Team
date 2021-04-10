@@ -1,11 +1,11 @@
-
+/*=====================================Preloader========================================================*/
 $(window).on('load', function () {
     var $preloader = $('#p_prldr'),
         $svg_anm   = $preloader.find('.svg_anm');
     $svg_anm.fadeOut();
     $preloader.delay(500).fadeOut('slow');
 });
-
+/*=====================================Our Skills Progres========================================================*/
 $(".dial").knob();
 $({animatedVal: 0}).animate({animatedVal: 90}, {
   duration: 2000,
@@ -41,13 +41,15 @@ $({animatedVal: 0}).animate({animatedVal: 85}, {
       $(".dial3").val(Math.ceil(this.animatedVal)).trigger("change"); 
   }   
 }); 
-
+/*=====================================Menu for mobile========================================================*/
 $(document).ready(function(){
   $('.header__burger').click(function(event) {
     $('.header__burger,.header__menu').toggleClass('active');
     $('body').toggleClass('lock');
   });
 });
+
+/*============================On Skroll Page and off for mobeli==============================================*/
 function windowSize(){
     if ($(window).width() >= '820'){
 jQuery(window).scroll(function(){
@@ -85,7 +87,7 @@ $("nav").on("click","a", function (event) {
   }
 });
 
-
+/*=====================================Animation========================================================*/
 const animItems = document.querySelectorAll('._anim-items');
 
 if(animItems.length > 0){

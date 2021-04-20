@@ -124,3 +124,32 @@ if(animItems.length > 0){
     animOnScroll();
   }, 1500);
 }
+/*=========================Active menu item and sonp-navigation-item======================================*/
+function scrollspy(){
+	let menuSection = document.querySelectorAll('ul li');
+	//let manuSonp = document.
+	// for clickable event
+	menuSection.forEach(v => {
+		v.onclick = (() => {
+			setTimeout(() => {
+				menuSection.forEach(j => j.classList.remove('active-link'))
+				v.classList.add('active-link')
+			}, 300)
+		})
+	})
+
+	// for window scrolldown event
+
+	window.onscroll = (() => {
+		let mainSection = document.querySelectorAll('main section');
+
+		mainSection.forEach((v, i) => {
+			let rect = v.getBoundingClientRect().y
+			if (rect < window.innerHeight - 200) {
+				menuSection.forEach(v => v.classList.remove('active-link'))
+				menuSection[i].classList.add('active-link')
+			}
+		})
+	})
+}
+scrollspy();

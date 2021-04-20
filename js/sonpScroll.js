@@ -1,14 +1,11 @@
 /****************************************************************
      SONP - Smooth ONePage Scroll - Simple JS based on JQuery
-
      - Section sizes
      - Smooth scroll
      - Sections navigation
      - Parallax effect
      - One simple JS file (no more)
-
      Author: Tales Luna - http://taleslunadev.com/
-
  ******************************************************************/
 function windowSize(){
     if ($(window).width() >= '1024'){
@@ -186,5 +183,3 @@ function windowSize(){
     }
 }
 $(window).on('load resize',windowSize);
-
-

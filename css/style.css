@@ -57,7 +57,6 @@ body{
 .block-title{
 	display: flex;
 	flex-direction: column;
-	max-width: 500px;
 	margin: 0 auto;
 }
 .subtitile{
@@ -281,7 +280,7 @@ body{
 .our-team{
 	background-color: #e7f1f8;
 	min-height: 100vh;
-	padding: 80px 0px;
+	padding: 100px 0px;
 }
 .persons{
 	margin-top: 40px;

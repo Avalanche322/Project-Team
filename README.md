@@ -24,7 +24,7 @@ or download
 
 Open folder
 
-`cd mockup-for-company`
+`cd Project-Team`
 
 Install node modules:
 
